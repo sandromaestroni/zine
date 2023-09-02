@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="zine">
+        <div class="page-1" style="background: url(./1.jpg)"></div>
+        <div class="page-2" style="background: url(./2.jpg)"></div>
+        <div class="page-3" style="background: url(./3.jpg)"></div>
+        <div class="page-4" style="background: url(./4.jpg)"></div>
+            <style>
+                div {
+                    font-size: 40px;
+                    height: 1600px;
+                    width: 1200px;
+                    border: 1px solid black;
+                }
+                .zine {
+                    display: grid;
+                    grid-template-areas:
+                        "page-3 page-2"
+                        "page-4 page-1";
+                }
+
+                .page-5,
+                .page-4,
+                .page-3,
+                .page-2 {
+                    transform: rotate(180deg);
+                }
+
+                .page-1 {
+                    grid-area: page-1;
+                }
+                .page-2 {
+                    grid-area: page-2;
+                }
+                .page-3 {
+                    grid-area: page-3;
+                }
+                .page-4 {
+                    grid-area: page-4;
+                }
+                .page-5 {
+                    grid-area: page-5;
+                }
+                .page-6 {
+                    grid-area: page-6;
+                }
+                .page-7 {
+                    grid-area: page-7;
+                }
+            </style>
+
+</body>
+
+</html>
